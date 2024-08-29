@@ -1,17 +1,30 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import '../style/Navbar.css';
 import logo from "../images/logo.png";
 
 const Navbar = () => {
     const location = useLocation();
+    const navigate = useNavigate();
 
     const handleScroll = (event, target) => {
         event.preventDefault();
+        
+        if (location.pathname !== '/') {
+            navigate('/');
+            setTimeout(() => {
+                scrollToTarget(target);
+            }, 100); 
+        } else {
+            scrollToTarget(target);
+        }
+    };
+
+    const scrollToTarget = (target) => {
         const element = document.getElementById(target);
         if (element) {
             window.scrollTo({
-                top: element.offsetTop - 150, // Adjust the offset if necessary
+                top: element.offsetTop - 150, 
                 behavior: 'smooth'
             });
         }
@@ -33,7 +46,7 @@ const Navbar = () => {
                     <a
                         href="/features"
                         onClick={(e) => handleScroll(e, 'features')}
-                        className={location.pathname === '/features' ? 'active' : ''}
+                        className={location.pathname === '/' && location.hash === '#features' ? 'active' : ''}
                     >
                         Features
                     </a>

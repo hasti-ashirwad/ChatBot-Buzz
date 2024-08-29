@@ -22,14 +22,6 @@ const ContactUs = () => {
         >
             <div className="contact-container">
                 <div className="contact-header">
-                    <motion.h5
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20 }}
-                        transition={{ duration: 1, delay: 0.2 }}
-                        className="contact-title"
-                    >
-                        Get Started
-                    </motion.h5>
                     <motion.h4
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20 }}

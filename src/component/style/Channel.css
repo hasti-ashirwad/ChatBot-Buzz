@@ -27,7 +27,7 @@
     font-size: 1rem;
     color: var(--Gray-500, #667085);
     max-width: 90vw; /* Set max-width relative to the viewport width */
-    margin: 0 auto;
+    margin: 0 ;
 }
 
 .social-icons {

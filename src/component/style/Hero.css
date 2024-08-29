@@ -3,26 +3,32 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 90vh; /* Use min-height for flexibility */
+    min-height: 90vh; 
     background-image: url('../images/herobg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    padding: 1rem; /* Add padding for small screens */
-    gap: 2rem; /* Reduced gap for better responsiveness */
+    padding: 1rem; 
+    gap: 6rem; 
   }
-  
+  .hero-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
   .hero-container h3 {
-    font-size: 2.5rem; /* Use relative units */
-    max-width: 90vw;   /* Max width relative to viewport */
+    font-size: 2.5rem; 
+    max-width: 90vw;  
     color: var(--header-color);
     margin: 0;
   }
   
   .hero-container h5 {
     font-size: 1rem; /* Adjusted font size */
-    max-width: 85vw; /* Max width relative to viewport */
+    max-width: 85vw;
     font-weight: 400;
     color: var(--gray-color);
     margin: 0;
@@ -30,7 +36,7 @@
   }
   
   .button {
-    padding: 0.75rem 1.5rem; /* Make the button size more responsive */
+    padding: 0.75rem 1.5rem;
     font-size: 1rem;
   }
   
@@ -39,8 +45,8 @@
   }
   
   .slick img {
-    width: 100%; /* Make images full width within their container */
-    max-width: 200px; /* Set a maximum width for images */
+    width: 100%; 
+    max-width: 200px; 
     border-radius: 10px;
   }
   

@@ -109,9 +109,11 @@ const Features = () => {
                     </motion.div>
                 </div>
             </div>
-            <div className='features-title' ref={ref4}>
+            <div className='features-end' ref={ref4}>
+                <div className='tittle'>
                 <h5>Cutting-edge features for advanced analytics</h5>
                 <p>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
+                </div>
                 <motion.div 
                     initial="hidden" 
                     animate={inView4 ? "visible" : "hidden"} 

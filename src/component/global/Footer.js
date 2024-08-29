@@ -1,9 +1,11 @@
 import React from 'react';
 import "../style/Footer.css";
-import logo from "../images/logo.png";
+import logo from "../images/footerlogo.png";
 import { CiPhone, CiMail } from "react-icons/ci";
 import { IoMdPrint } from "react-icons/io";
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { CiInstagram } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -18,21 +20,21 @@ const Footer = () => {
                     </p>
                     <div className="footer-icons">
                         <div className="footer-icon">
-                            <CiPhone size={20} />
+                            <CiPhone size={30} />
                             <div className='details'>
                                 <p>Tel</p>
                                 <p className='orange'>310-437-2766</p>
                             </div>
                         </div>
                         <div className="footer-icon">
-                            <CiMail size={20} />
+                            <CiMail size={30} />
                             <div className='details'>
                                 <p>Email</p>
                                 <p className='orange'>example@example.com</p>
                             </div>
                         </div>
                         <div className="footer-icon">
-                            <IoMdPrint size={20} />
+                            <IoMdPrint size={30} />
                             <div className='details'>
                                 <p>Fax</p>
                                 <p className='orange'>310-437-2766</p>
@@ -41,17 +43,18 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="social-icon-footer">
-                    <div className="social-footer ">
-                        <FaFacebook />
-                    </div>
-                    <div className="social-footer ">
+                <div className="social-footer ">
                         <FaTwitter />
                     </div>
                     <div className="social-footer ">
-                        <FaLinkedin />
+                        <FaFacebook />
+                    </div>
+                   
+                    <div className="social-footer ">
+                        <CiInstagram />
                     </div>
                     <div className="social-footer ">
-                        <FaLinkedin />
+                        <FaGithub />
                     </div>
                 </div>
             </div>
