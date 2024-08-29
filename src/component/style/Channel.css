@@ -6,7 +6,6 @@
     flex-wrap: wrap;
     min-height: 25vh; /* Use min-height for better flexibility */
     align-items: center;
-    padding: 1rem; /* Add padding for mobile devices */
 }
 
 .channel-title h4 {
@@ -35,7 +34,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    padding: 1rem 0; /* Add padding for spacing */
 }
 
 .social-icons img {

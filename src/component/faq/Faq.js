@@ -40,7 +40,7 @@ const Payment = () => {
           <MdOutlineEmail />
         </motion.div>
         <motion.h5 variants={textVariants} whileHover="hover">Payment reminders</motion.h5>
-        <p>Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.</p>
+        <p>Automate timely, personalized payment reminders via WhatsApp, reducing late payments and enhancing customer satisfaction with seamless, real-time communication.</p>
       </motion.div>
       
       <motion.div className="payment-box" variants={boxVariants}>
@@ -48,7 +48,7 @@ const Payment = () => {
           <RiChatPollLine />
         </motion.div>
         <motion.h5 variants={textVariants} whileHover="hover">Agent Chat Support</motion.h5>
-        <p>Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.</p>
+        <p>Provide real-time customer support via WhatsApp with live agents, ensuring quick responses and personalized assistance to enhance customer satisfaction.</p>
       </motion.div>
       
       <motion.div className="payment-box" variants={boxVariants}>
@@ -56,7 +56,7 @@ const Payment = () => {
           <CiCloudSun />
         </motion.div>
         <motion.h5 variants={textVariants} whileHover="hover">Google Wallet</motion.h5>
-        <p>Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.</p>
+        <p>An AI-powered FAQ Bot that provides instant, accurate answers to customer queries, improving support efficiency and user experience.</p>
       </motion.div>
       
       <motion.div className="payment-box" variants={boxVariants}>
@@ -64,7 +64,7 @@ const Payment = () => {
           <LuBarChart2 />
         </motion.div>
         <motion.h5 variants={textVariants} whileHover="hover">Apple Pay</motion.h5>
-        <p>Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.</p>
+        <p>Send personalized messages to multiple contacts simultaneously using WhatsApp Broadcast, enhancing communication and engagement with your audience.</p>
       </motion.div>
     </motion.div>
   );

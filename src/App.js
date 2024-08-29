@@ -4,7 +4,7 @@ import Navbar from './component/global/Navbar';
 import Footer from './component/global/Footer';
 import Hero from './component/hero/Hero';
 import Features from './component/features/Features';
-import Payment from './component/payment/Payment';
+import Payment from './component/faq/Faq';
 import Channel from './component/channel/Channel';
 import ContactUs from './component/contact/ContactUs';
 import "./component/style/Comman.css";
