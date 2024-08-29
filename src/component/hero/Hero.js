@@ -73,7 +73,7 @@ const Hero = () => {
                     animate={{ y: inView ? 0 : -50, opacity: inView ? 1 : 0 }}
                     transition={{ duration: 1, delay: 0.5 }}
                 >
-                    Create powerful conversations with WhatsApp API solution - Page Header
+                    Create powerful conversations with WhatsApp API solution
                 </motion.h3>
                 <motion.h5
                     initial={{ y: -50, opacity: 0 }}

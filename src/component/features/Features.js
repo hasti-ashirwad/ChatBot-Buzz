@@ -60,6 +60,7 @@ const Features = () => {
                 </div>
 
                 <div className="features-content" ref={ref2}>
+                    {/* Swap the order of the image and content for the second feature */}
                     <motion.div 
                         initial="hidden" 
                         animate={inView2 ? "visible" : "hidden"} 
@@ -111,8 +112,8 @@ const Features = () => {
             </div>
             <div className='features-end' ref={ref4}>
                 <div className='tittle'>
-                <h5>Cutting-edge features for advanced analytics</h5>
-                <p>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
+                    <h5>Cutting-edge features for advanced analytics</h5>
+                    <p>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
                 </div>
                 <motion.div 
                     initial="hidden" 

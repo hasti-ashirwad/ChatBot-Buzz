@@ -42,6 +42,7 @@
 .main-footer{
     display: flex;
     justify-content: space-between;
+    gap: 4rem;
 }
 .footer-logo .logo {
     max-width: 210px; /* Adjusted for better mobile fit */
