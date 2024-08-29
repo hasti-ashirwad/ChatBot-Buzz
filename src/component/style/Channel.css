@@ -1,0 +1,69 @@
+.channel-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    min-height: 25vh; /* Use min-height for better flexibility */
+    align-items: center;
+    padding: 1rem; /* Add padding for mobile devices */
+}
+
+.channel-title h4 {
+    font-size: 1.2rem;
+    color: var(--purple-color, #7C3AED);
+    margin: 0;
+}
+
+.channel-title h5 {
+    margin: 0;
+    font-size: 1.8rem; /* Slightly reduced for better responsiveness */
+    font-weight: 500;
+    color: var(--header-color, #000);
+}
+
+.channel-title p {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--Gray-500, #667085);
+    max-width: 90vw; /* Set max-width relative to the viewport width */
+    margin: 0 auto;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0; /* Add padding for spacing */
+}
+
+.social-icons img {
+    width: 50px; /* Reduce icon size for smaller screens */
+    height: auto;
+    transition: transform 0.3s; /* Add a smooth hover effect */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+@media (min-width: 768px) {
+    .channel-title h5 {
+        font-size: 2rem;
+    }
+
+    .social-icons img {
+        width: 60px; /* Original size for larger screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .channel-title h5 {
+        font-size: 1.5rem; /* Further reduce for very small screens */
+    }
+
+    .social-icons img {
+        width: 45px; /* Further reduce icon size for very small screens */
+    }
+}

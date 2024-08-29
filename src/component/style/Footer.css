@@ -1,0 +1,142 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem; /* Reduced padding for better mobile fit */
+    gap: 2rem;
+    background-color: var(--blue-color); /* Adjust background color as needed */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.read{
+    color: var(--Primary-Blue-500, #1D4ED8);
+
+}
+.footer-logo .logo {
+    max-width: 210px; /* Adjusted for better mobile fit */
+    height: auto;
+}
+
+.footer-text {
+    font-size: 1rem; /* Slightly smaller font size for mobile */
+    margin: 0;
+    color: var(--white-color);
+}
+
+.footer-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-icon {
+    display: flex;
+    gap: 1rem;
+    color: var(--Schemes-Outline-Variant, #CAC4D0);
+}
+
+.footer-icon p {
+    display: flex;
+    margin: 0;
+}
+
+.orange {
+    color: var(--orange-color);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-divider {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #ddd; /* Adjust color as needed */
+}
+
+.footer-li {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
+    list-style: none; /* Remove default bullet points */
+    gap: 1.3rem; /* Reduced gap for better mobile fit */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center text for better readability on mobile */
+    color: var(--white-color);
+}
+
+.footer-li li {
+    font-size: 1rem; /* Slightly smaller font size for mobile */
+    color: var(--white-color);
+    cursor: pointer; /* Optional: Make list items look clickable */
+}
+
+.footer-li li:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.bottom-part {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: center;
+    gap: 1rem; /* Add gap for better spacing */
+    text-align: center; /* Center align text */
+}
+
+.main-link {
+    display: flex;
+    flex-direction: column; /* Stack links vertically on mobile */
+    gap: 2rem; /* Add gap between link sections */
+}
+
+.link {
+    list-style: none; /* Remove default bullet points */
+    gap: 0.5rem; /* Reduced gap for better mobile fit */
+    padding: 0;
+    margin: 0;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align links */
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 1rem; /* Slightly smaller font size for mobile */
+    color: var(--white-color);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .footer {
+        padding: 3rem 4rem;
+    }
+
+    .footer-icons {
+        flex-direction: row; /* Row layout for larger screens */
+        justify-content: space-between;
+    }
+
+    .main-link {
+        flex-direction: row; /* Row layout for larger screens */
+        justify-content: space-between;
+    }
+
+    .bottom-part {
+        flex-direction: row; /* Row layout for larger screens */
+        justify-content: space-between;
+    }
+
+    .footer-li {
+        flex-direction: row; /* Row layout for larger screens */
+    }
+
+    .link {
+        flex-direction: column;
+        align-items: flex-start; /* Align links to the start */
+    }
+}

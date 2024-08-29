@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './component/global/Navbar';
+import Footer from './component/global/Footer';
+import Hero from './component/hero/Hero';
+import Features from './component/features/Features';
+import Payment from './component/payment/Payment';
+import Channel from './component/channel/Channel';
+import ContactUs from './component/contact/ContactUs'; // Assuming ContactUs is in this directory
+import "./component/style/Comman.css"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        {/* Main Page */}
+        <Route path="/" element={
+          <>
+            <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+              <Hero />
+            </div>
+            <Features />
+            <Payment />
+            <Channel />
+            <Footer />
+          </>
+        } />
+
+        {/* Contact Us Page */}
+        <Route path="/contact" element={
+          <>
+            <ContactUs />
+            <Footer />
+          </>
+        } />
+      </Routes>
+    </Router>
   );
 }
 
