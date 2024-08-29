@@ -6,6 +6,17 @@ import logo from "../images/logo.png";
 const Navbar = () => {
     const location = useLocation();
 
+    const handleScroll = (event, target) => {
+        event.preventDefault();
+        const element = document.getElementById(target);
+        if (element) {
+            window.scrollTo({
+                top: element.offsetTop - 150, // Adjust the offset if necessary
+                behavior: 'smooth'
+            });
+        }
+    };
+
     return (
         <nav className="navbar">
             <div><img src={logo} className='navbar-logo' alt='logo' /></div>
@@ -19,12 +30,13 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link
-                        to="/Features"
-                        className={location.pathname === '/Features' ? 'active' : ''}
+                    <a
+                        href="/features"
+                        onClick={(e) => handleScroll(e, 'features')}
+                        className={location.pathname === '/features' ? 'active' : ''}
                     >
                         Features
-                    </Link>
+                    </a>
                 </li>
                 <li>
                     <Link
@@ -37,11 +49,11 @@ const Navbar = () => {
             </ul>
             <Link to="/contact" style={{ textDecoration: 'none' }}>
                 <div className="button">
-                    BOOK live DEMO
+                    BOOK LIVE DEMO
                 </div>
             </Link>
         </nav>
     );
-}
+};
 
 export default Navbar;

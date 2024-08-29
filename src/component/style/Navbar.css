@@ -5,7 +5,7 @@
     align-items: center;
     background-color: var( --white-color);
     color:var(--black-color);
-    height: 9.1vh;
+    height: 9.5vh;
     position: sticky; /* Sticky navbar */
     top: 0; /* Stick to the top */
     z-index: 1000; /* Ensure it's above other content */
