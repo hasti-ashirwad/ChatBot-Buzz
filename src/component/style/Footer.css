@@ -29,6 +29,7 @@
 .footer-icons {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .footer-icon {

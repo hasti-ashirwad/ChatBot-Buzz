@@ -20,8 +20,8 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        to="/services"
-                        className={location.pathname === '/services' ? 'active' : ''}
+                        to="/Features"
+                        className={location.pathname === '/Features' ? 'active' : ''}
                     >
                         Features
                     </Link>

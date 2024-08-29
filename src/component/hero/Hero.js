@@ -3,11 +3,11 @@ import Slider from 'react-slick';
 import '../style/Hero.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
-import slick1 from "../images/1.png"
-import slick2 from "../images/2.png"
-import slick3 from "../images/3.png"
-import slick4 from "../images/4.png"
-import slick5 from "../images/5.png"
+import slick1 from "../images/1.png";
+import slick2 from "../images/2.png";
+import slick3 from "../images/3.png";
+import slick4 from "../images/4.png";
+import slick5 from "../images/5.png";
 
 const Hero = () => {
   const settings = {
@@ -18,6 +18,38 @@ const Hero = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   };
 
   return (
@@ -37,16 +69,16 @@ const Hero = () => {
             <img src={slick3} alt="Slide 3" />
           </div>
           <div>
-            <img src={slick4} alt="Slide 1" />
+            <img src={slick4} alt="Slide 4" />
           </div>
           <div>
-            <img src={slick5} alt="Slide 2" />
+            <img src={slick5} alt="Slide 5" />
           </div>
           <div>
-            <img src={slick2} alt="Slide 3" />
+            <img src={slick2} alt="Slide 6" />
           </div>
           <div>
-            <img src={slick1} alt="Slide 3" />
+            <img src={slick1} alt="Slide 7" />
           </div>
         </Slider>
       </div>
